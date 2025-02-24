@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Mesario ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe4e1;
+            color: #d63384;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #c2185b;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Mesario, mi nochecita ❤️</h1>
+    <nav>
+        <a href="#" onclick="showSection('historia')">Nuestra historia en estos 7 meses</a>
+        <a href="#" onclick="showSection('galeria')">Galería</a>
+        <a href="#" onclick="showSection('sorpresa')">Sorpresa</a>
+    </nav>
+    
+    <section id="historia" class="active">
+        <h2>Nuestra Historia</h2>
+        <p>Amore mio, no tengo palabras suficientes para decirte lo mucho que estoy agradecido de haberte encontrado en mi vida. Quiero que sepas que estos últimos meses han sido maravillosos.</p>
+        
+        <p>Aunque sé que tenemos nuestras diferencias al momento de demostrar cariño, quiero que sepas que no te dejaré de amar y trataré siempre de estar bien a tu lado. He sabido y he aprendido muchas cosas.</p>
+        
+        <p>Quiero agradecerte por estos meses que hemos compartido, todo ha sido bastante bueno en lo peculiar. Agradezco igual la paciencia que me has mostrado, sé que no soy fácil de querer, pero te estoy agradecido, amor.</p>
+        
+        <p>Igual me gustaría decirte que sé que tal vez esto no sea mucho, pero lo hice de todo corazón. Al final, yo no tengo mucha paciencia para esto y me tomó un poco de tiempo. Sé que puedo mejorarla y lamento no darte algo más que esto, lo lamento mucho. Espero que te guste.</p>
+        
+        <p>Quiero decirte que te amo mucho, mi nochecita, hoyuelitos lindos, mi niña, y que quiero seguir estando a tu lado para seguir compartiendo más cosas, más risas, más momentos de "¿qué rayos?" o esos momentos donde simplemente me escondo porque me da miedo jsjsjs.</p>
+        
+        <p>tu papá, que espera que en estos 5 meses nos veamos porque va a ser más pronto de lo que esperas. Te amo, amor.</p>
+        
+        <p>Feliz Mes.</p>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galería</h2>
+        <p>Aquí irán nuestras fotos más hermosas y aunque no en todsas salga yo todas las
+            que me llegas a mandar las atesoro mucho amor mio. ❤️</p>
+        <div class="gallery">
+            <img src="imagen1.jpg" alt="Nosotros juntos">
+            <img src="imagen2.jpg" alt="Un hermoso recuerdo">
+            <img src="imagen3.jpg" alt="Un momento especial">
+            <img src="imagen4.jpg" alt="Un momento especial">
+            <img src="imagen5.jpg" alt="Un momento especial">
+            <img src="imagen6.jpg" alt="Un momento especial">
+            <img src="imagen7.jpg" alt="Un momento especial">
+            <img src="imagen8.jpg" alt="Un momento especial">
+            <img src="imagen9.jpg" alt="Un momento especial">
+            <img src="imagen10.jpg" alt="Un momento especial">
+            <img src="imagen11.jpg" alt="Un momento especial">
+            <img src="imagen12.jpg" alt="Un momento especial">
+
+        </div>
+    </section>
+    
+    <section id="sorpresa">
+        <h2>Sorpresa 🎁</h2>
+        <p>Haz clic en el botón para recibir una sorpresa</p>
+        <button onclick="alert('Boleto de intercambio para una cita el día que tú quieras❤️')">Haz clic aquí</button>
+    </section>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
